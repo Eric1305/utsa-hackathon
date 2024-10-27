@@ -1,0 +1,58 @@
+Pseudocode for Rowdy Hacks
+
+A guide for functions to implement in UI
+Create user and pass ------------------------------
+	/*things to update in ui
+	un- change to whatever username is
+	pw- change to whatever password is*/
+	
+	const un = (input from username box);
+	const pw = (input from password box);
+	
+	const un = new UserProfile("un", "pw"); // create new user
+logging----------------------------------------------
+	logging locations --------------------------------------------
+		/*things to update in ui
+		name- whatever user names the location
+		*/
+	
+
+		const name = (/*name of location from user*/);
+		const name = new SubLocation(name);// create new location. every location starts out as a sublocation
+	
+		un.addLocation(name);// adds location to user's location list
+	
+		/*parent location*/.addSubLocation(/*child location*/); /*puts a sublocation into another sublocation's location list ex: 		house<-room*/
+		
+		un.removeLocation(name);// will remove location
+	logging money-------------------------------------------------
+		/*things to update in ui
+		mName- whatever user names the asset 
+		type- the type of asset chosen
+		date- the date entered for the asset
+		value- the dollar amount entered
+		*/
+
+		const mName = (/*name of money entry*/);
+		const type = (/*type*/);
+		const date = (/*date. string. ex: 10-12-2024*/)
+		const value = (/*dollar amount*/)
+
+		mName.createMoney(mName, type, date, value);// create the asset. will automatically update history
+		name.addMoney(/*mName*/);// puts the asset in a location
+		name.removeMoney(/*mName*/);// deletes the asset
+		
+	helpful functions // not necessary but good for debugging-------
+		un.listLocations(); //will print out all locations
+	
+		un.displayHierarchy();// print the how the sublists are organized
+//transaction history----------------------------------
+
+	displayHistory(); 
+
+	
+	
+
+	
+	
+
